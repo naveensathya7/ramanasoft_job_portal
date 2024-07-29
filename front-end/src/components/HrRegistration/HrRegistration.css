@@ -1,0 +1,78 @@
+.input:-webkit-autofill {transition: background-color 5000s ease-in-out 0s;}
+* {
+    border-style: 2px 3px solid dashed #3A5FCD;
+}
+
+
+  
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important; /* Change 'white' to the background color of your form */
+  -webkit-text-fill-color: #000 !important; /* Change '#000' to the text color you want */
+  background-color: transparent !important;
+}
+/* css for input box*/
+
+/* App.css */
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width:100%;
+    
+
+ 
+  }
+  
+  .otp-input {
+    width: 0.8rem;
+    padding: 5px;
+    height: 50px;
+    margin: 0 10px;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+   
+  .otp-input-error {
+    border-color: red !important;
+  }
+
+  .otp-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .otp-input::placeholder {
+    color: #ccc;
+  }
+  
+  .otp-container span {
+    font-size: 24px;
+    margin: 0 5px;
+    color: #007bff;
+  }
+  
+ 
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    border: none;
+  }
+  
+  .resend-otp-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .resend-otp-button:disabled {
+    background-color: #999;
+  }
+  
