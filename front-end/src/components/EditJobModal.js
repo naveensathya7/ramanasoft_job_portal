@@ -66,7 +66,7 @@ const EditJobModal = ({ show, handleClose, job, handleSave }) => {
         salary: job.salary || '',
         phone: job.phone || '',
         email: job.email || '',
-        location: job.jobCity || '',
+        location: job.Location || '',
         requirements: job.requirements || '',
         responsibilities: job.responsibilities || '',
         applicationUrl: job.applicationUrl || '',
@@ -172,6 +172,7 @@ const EditJobModal = ({ show, handleClose, job, handleSave }) => {
                       className="form-control"
                     >
                       <option value="">Select Experience</option>
+                      <option value="0-1">0-1</option>
                       <option value="1-2">1-2</option>
                       <option value="3-5">3-5</option>
                       <option value="5+">5+</option>

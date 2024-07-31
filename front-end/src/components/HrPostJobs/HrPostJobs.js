@@ -39,12 +39,13 @@ const HrPostJobs = () => {
     console.log(values); // Replace with your API call
 
     // Example API call using fetch
-    await axios.post("http://localhost:5000/post-job",{values})
+    await axios.post("http://localhost:5000/post-job",{job:values})
       .then(response=>{
         console.log("Registration request sent",response)
         toast.success(`Job posted successfully`, {
           autoClose: 5000
         })
+        resetForm();
         
         
       })

@@ -1,0 +1,38 @@
+.profile-page {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header img {
+    border: 3px solid #007bff;
+  }
+  
+  .card-header h2 {
+    color: #333;
+  }
+  
+  .card-header p {
+    color: #777;
+  }
+  
+  .card-body {
+    font-size: 1rem;
+  }
+  
+  .card-body .row {
+    margin-bottom: 15px;
+  }
+  
+  .card-body .row strong {
+    color: #333;
+  }
+  
+  .card-body .row .col-sm-8 {
+    color: #555;
+  }
+  

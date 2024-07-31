@@ -17,6 +17,7 @@ import thumbnail from '../images/thumbnail.jpeg'
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Cookies from 'js-cookie'
 import Footer from './Footer';
+import HrNavbar from './HrNavbar/HrNavbar';
 
 const About = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -55,31 +56,7 @@ const About = () => {
   }, []);
   return (
     <div>
-      <Navbar bg="light" expand="lg">
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              src={ramana}
-              width="200"
-              className="d-inline-block align-top rounded"
-              alt="Left Logo"
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link href="#about" className="fw-bold me-4 text-secondary">About</Nav.Link>
-              <Nav.Link href="#applied" className="fw-bold me-4 text-secondary">Applied</Nav.Link>
-              <Nav.Link href="#profile" className="fw-bold me-4 text-secondary">Profile</Nav.Link>
-            </Nav>
-            <Nav>
-              <div className="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center fw-bold" style={{ width: '50px', height: '50px' }}>
-                {getUserInitials(Cookies.get('user')||'Guest')}
-              </div>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <HrNavbar/>
       <section className='logo-bar'>
         <div className='d-flex justify-content-between align-items-center m-3'>
           {/* Logo on the left */}

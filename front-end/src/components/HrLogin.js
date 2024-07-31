@@ -61,13 +61,9 @@ const HrLogin = () => {
     setFormData({ ...formData, [name]: value });
     if (value && !/^[6-9][0-9]{9}$/.test(value)){
        
-      setErrors({...errors,mobileNo:'First digit should be between 6 and 9'})
-  }
-
-     else if (name === 'mobileNo' && value.length !== 10) {
-      setErrors({ ...errors, mobileNo: 'Mobile number must be 10 digits' });
+      setErrors({...errors,mobileNo:'First digit should be between 6-9 and must be 10  digits'})
     }
-       else {
+      else {
         setErrors({ ...errors, mobileNo: '' });
       }
       

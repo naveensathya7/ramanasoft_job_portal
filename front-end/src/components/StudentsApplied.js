@@ -183,7 +183,7 @@ const JobApplicationsTable = () => {
               value={globalFilter || ''}
               onChange={e => setGlobalFilter(e.target.value || undefined)}
               placeholder="Search all columns"
-              style={{ marginBottom: '10px', padding: '5px', height: '30px', border: '1px solid #7d8085', outline: 'none', borderRadius: '2px' }}
+              style={{ marginBottom: '10px', padding: '5px', height: '30px', border: '1px solid #737478', outline: 'none', borderRadius: '2px' }}
             />
           </div>
         </div>

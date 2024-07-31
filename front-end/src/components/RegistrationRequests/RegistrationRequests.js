@@ -130,7 +130,7 @@ const RegistrationRequests = () => {
                 <th style={{backgroundColor:'#1b74a8',color:'white'}}>
                   <Form.Check 
                     type="checkbox" 
-                    checked={selectedCandidates.length === filteredCandidates.length}
+                    checked={selectedCandidates.length === filteredCandidates.length && filteredCandidates.length!==0}
                     onChange={handleSelectAllCandidates}
                   />
                 </th>
@@ -174,7 +174,9 @@ const RegistrationRequests = () => {
                 </tr>
               ))}
             </tbody>
+            
           </Table>
+          {(filteredCandidates.length==0) &&<p style={{textAlign:'center'}}>No registration requests</p>}
         </div>
         {selectedCandidates.length > 0 && 
           <div className="d-flex justify-content-end">
